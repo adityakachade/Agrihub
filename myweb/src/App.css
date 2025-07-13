@@ -1,0 +1,374 @@
+.disease-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.bug-icon {
+  color: #dc2626;
+}
+
+.symptom-icon {
+  color: #ef4444;
+}
+
+.treatment-icon {
+  color: #10b981;
+}
+
+.severity-badge {
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+
+.high-severity {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.medium-severity {
+  background-color: #fef3c7;
+  color: #ca8a04;
+}
+
+.low-severity {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.default-severity {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+.confidence-text {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.description {
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.card-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .card-sections {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.section-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #9ca3af;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+/* Root footer container styles */
+.footer {
+  background-color: #1f2937; /* Tailwind's gray-900 */
+  color: white;
+}
+
+/* Inner container with max width and padding */
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem; /* Top/bottom 48px, sides 16px */
+}
+
+/* Grid layout for the 4-column layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Responsive layout for medium+ screens */
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Each section inside the grid */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Logo and company name row */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Icon background (green box) */
+.logo-icon {
+  background-color: #059669; /* Tailwind's green-600 */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Leaf icon in logo */
+.icon-white {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+/* Brand name */
+.logo-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: bold;
+}
+
+/* Subtitle below brand name */
+.logo-subtitle {
+  font-size: 0.875rem; /* text-sm */
+  color: #9ca3af; /* Tailwind's gray-400 */
+}
+
+/* Description text under logo */
+.footer-description {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+/* Social media icon row */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Social icons */
+.icon-gray {
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.icon-gray:hover {
+  color: #34d399; /* Tailwind's green-400 */
+}
+
+/* Section headings */
+.footer-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* List styling for links/services */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.footer-list li a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer-list li a:hover {
+  color: #34d399; /* Tailwind's green-400 */
+}
+
+/* Contact info section */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.footer-contact div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Green icon in contact section */
+.icon-green {
+  color: #34d399;
+  width: 20px;
+  height: 20px;
+}
+
+/* Bottom copyright and policies row */
+.footer-bottom {
+  border-top: 1px solid #374151; /* Tailwind's gray-800 */
+  margin-top: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+/* Responsive row layout for footer bottom */
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Privacy/Terms/Policy links */
+.footer-policies {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-policies a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-policies a:hover {
+  color: #34d399;
+}
+
+/* Card container */
+.health-meter-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb; /* Tailwind's gray-200 */
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Header row */
+.health-meter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.health-meter-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827; /* Tailwind's gray-900 */
+}
+
+/* Health percentage value */
+.health-meter-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Color classes for text */
+.text-green {
+  color: #16a34a; /* green-600 */
+}
+
+.text-yellow {
+  color: #ca8a04; /* yellow-600 */
+}
+
+.text-red {
+  color: #dc2626; /* red-600 */
+}
+
+/* Health bar background */
+.health-meter-bar {
+  width: 100%;
+  height: 0.75rem;
+  background-color: #e5e7eb; /* gray-200 */
+  border-radius: 9999px;
+}
+
+/* Health bar fill */
+.health-meter-fill {
+  height: 100%;
+  border-radius: 9999px;
+}
+
+/* Color classes for progress bar fill */
+.bg-green {
+  background-color: #22c55e; /* green-500 */
+}
+
+.bg-yellow {
+  background-color: #eab308; /* yellow-500 */
+}
+
+.bg-red {
+  background-color: #ef4444; /* red-500 */
+}
