@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   Camera, Upload, Leaf, AlertCircle, CheckCircle, Info, Clock, 
-  Droplets, Sun, Bug, TrendingUp, Award, Users 
+   Bug, TrendingUp, Award, Users 
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { usePlant } from '../contexts/PlantContext';

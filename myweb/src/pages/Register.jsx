@@ -158,8 +158,9 @@ const Register = () => {
             />
             <label htmlFor="terms">
               I agree to the{' '}
-              <a href="#" className="text-green-600">Terms of Service</a> and{' '}
-              <a href="#" className="text-green-600">Privacy Policy</a>
+              <a href="/terms-of-service" className="text-green-600">Terms of Service</a> and{' '}
+              <a href="/privacy-policy" className="text-green-600">Privacy Policy</a>
+
             </label>
           </div>
 

@@ -17,10 +17,10 @@ const Footer = () => {
     <footer className="footer">
       {/* Container for max-width and padding */}
       <div className="footer-container">
-        
+
         {/* Grid layout for footer sections */}
         <div className="footer-grid">
-          
+
           {/* ----- Company Info Section ----- */}
           <div className="footer-section">
             {/* Logo and brand name */}
@@ -36,17 +36,18 @@ const Footer = () => {
 
             {/* Description text */}
             <p className="footer-description">
-              Advanced AI-powered plant disease detection and treatment recommendations 
+              Advanced AI-powered plant disease detection and treatment recommendations
               to help you maintain healthy plants and gardens.
             </p>
 
             {/* Social media icons */}
             <div className="footer-social">
-              <a href="#"><Facebook className="icon-gray" /></a>
-              <a href="#"><Twitter className="icon-gray" /></a>
-              <a href="#"><Instagram className="icon-gray" /></a>
-              <a href="#"><Github className="icon-gray" /></a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><Facebook className="icon-gray" /></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><Twitter className="icon-gray" /></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Instagram className="icon-gray" /></a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer"><Github className="icon-gray" /></a>
             </div>
+
           </div>
 
           {/* ----- Quick Links Section ----- */}
@@ -87,9 +88,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>© 2024 Agrihub . All rights reserved.</p>
           <div className="footer-policies">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+            <a href="/cookie-policy">Cookie Policy</a>
           </div>
         </div>
       </div>
